@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanulói Adatok és Órarend</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="orarend.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Tanulói Adatok és Órarend</h1>
+    <section>
+      <h2>Tanulók adatainak megadása</h2>
+      <label for="numStudents">Hány tanuló adatait szeretnéd megadni?</label>
+      <input type="number" id="numStudents" placeholder="Pl. 2" min="1" />
+      <button onclick="collectStudentData()">Adatok megadása</button>
+
+      <div id="studentData"></div>
+    </section>
+    <section>
+      <h2>Heti Órarend</h2>
+      <button onclick="displayTimetable()">Órarend megjelenítése</button>
+
+      <div id="timetable"></div>
+    </section>
+  </div>
+</body>
+</html>
